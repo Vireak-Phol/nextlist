@@ -142,7 +142,7 @@ const TodoList = () => {
       setIsLoading(false);
     }
   }, [search, title]);
-  
+
 
   const handleTodoDelete = async (id) => {
     if (confirm("Are you sure you wanna delete this todo?")) {
@@ -277,7 +277,7 @@ const TodoList = () => {
                     ))
                   ) : (
                     isActive && (
-                      <li>"{ search }" No result match</li> 
+                      <li>{search} - No result match</li> 
                     )
                   )
                 }
