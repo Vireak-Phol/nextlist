@@ -1,0 +1,88 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper{
+  position: relative;
+}
+.hide{
+  display: none;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.show{
+  display: block;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.text-danger{
+  color: red;
+}
+.text-pink{
+  color: hsl(270deg 67% 49%);
+}
+.text-gray{
+  color: rgb(135, 0, 129);
+}
+
+.autocom-box{
+  padding: 12px;
+  opacity: 1;
+  pointer-events: auto;
+  max-height: 280px;
+  overflow-y: auto;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  z-index: 10;
+  background-color: #efefef;
+  border: 1px solid gray;
+}
+
+.autocom-box li{
+  list-style: none;
+  padding: 8px 12px;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.autocom-box li:hover{
+  background: #ffffff;
+}
+
+.d-flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.jbtw{
+  justify-content: space-between;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
